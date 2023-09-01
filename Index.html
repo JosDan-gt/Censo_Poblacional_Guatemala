@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Agrega el enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="index">
+    <main>
+        <div>
+        </div>
+    </main>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12 text-center">
+                <div class="input-group">
+                    <select id="cmbUbication" class="form-select">
+                        <option value="999">El progreso</option>
+                        <option value="201">Guastatoya</option>
+                        <option value="202">Morazan</option>
+                        <option value="203">San Agustin</option>
+                        <option value="204">San Cristobal</option>
+                        <option value="205">El jicaro</option>
+                        <option value="206">Sansare</option>
+                        <option value="207">Sanarate</option>
+                        <option value="208">San Antonio</option>
+                    </select>
+                    <button type="button" onclick="LLamada2();" class="btn btn-secondary btn-sm bg-warning">Buscar
+                        Municipio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fondo">
+        <div class="container overflow-hidden">
+            <div class="row row-cols-1 row-cols-md-2 gy-5">
+                <div class="col">
+                    <div class="title mt-2">Poblacion Por Sexo
+                        <div class="p-3">Hombre:
+                            <div class="color1" id="totH"></div>
+                        </div>
+                        <div class="p-3">Mujer:
+                            <div class="color1" id="totM"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="title mt-2">Poblacion Por Areas
+                        <div class="p-3">Urbana
+                            <div class="color1" id="totUrb"></div>
+                        </div>
+                        <div class="p-3">Rural
+                            <div class="color1" id="totRur"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="title mt-2">Población por grandes grupos de edad
+                        <div class="p-3">0-14 Años
+                            <div class="color1" id="tot14"></div>
+                        </div>
+                        <div class="p-3">15-64 Años
+                            <div class="color1" id="tot1564"></div>
+                        </div>
+                        <div class="p-3">65 y mas años
+                            <div class="color1" id="tot65"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="title mt-2">Población por pueblos
+                        <div class="p-3">Maya
+                            <div class="color1" id="totMay"></div>
+                        </div>
+                        <div class="p-3">Garífuna
+                            <div class="color1" id="totGar"></div>
+                        </div>
+                        <div class="p-3">Xinka
+                            <div class="color1" id="totXin"></div>
+                        </div>
+                        <div class="p-3">Afrodescendiente/Creole/Afromestizo
+                            <div class="color1" id="totACA"></div>
+                        </div>
+                        <div class="p-3">Ladino
+                            <div class="color1" id="totLad"></div>
+                        </div>
+                        <div class="p-3">Extranjero
+                            <div class="color1" id="totExt"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grafZone">
+        <div class="grafica">
+            <canvas id="graficaHombresMujeres"></canvas>
+        </div>
+
+        <div class="grafica">
+            <canvas id="graficaEdades"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <script src="JS/Jscript.js"></script>
+    <footer>
+        <div class="footers">
+            <p> &copy;Todos Los Derechos Reservados. Jose Aldana</p>
+        </div>
+    </footer>
+</body>
+
+</html>

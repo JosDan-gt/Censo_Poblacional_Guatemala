@@ -1,0 +1,85 @@
+@media (min-width: 768px) {
+    .fondo {
+        background-color: #1cbdaa98;
+        margin-top: 1rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        padding-bottom: 8px;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .fondo {
+        background-color: #1cbdaa98;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-bottom: 8px;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+.color1 {
+    background-color: #a3ffd5c9;
+}
+
+.title {
+    background-color: #0a854e;
+}
+
+.p-3 {
+
+    background-color: #63ce9ec9;
+}
+
+.row {
+    margin-top: 4rem;
+}
+
+body {
+    background-image: url('https://d5tnfl9agh5vb.cloudfront.net/uploads/2022/06/Que-es-estadistica-570x363.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.footers {
+    text-align: center;
+    background-color: #63ce9ec9;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin: 0 2rem 1rem 2rem;
+    border-radius: 1rem;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
+
+.grafZone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajusta el espaciado entre las gráficas */
+}
+
+.grafica {
+    width: 48%; /* Establece el ancho de cada gráfica al 48% para dejar espacio para el margen entre ellas */
+    margin-bottom: 20px; /* Agrega un margen inferior para separar las gráficas */
+}
+
+@media (max-width: 768px) {
+    .grafZone {
+        flex-direction: column; /* Cambia la dirección de flexión a columnas */
+    }
+
+    .grafica {
+        width: 100%; /* Ancho completo para ocupar toda la pantalla en dispositivos más pequeños */
+        margin-bottom: 10px; /* Puedes ajustar el margen inferior según tus preferencias */
+    }
+}
